@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #3498db;
+            background-color: #f1f1f1;
         }
 
         .container {
@@ -37,10 +37,10 @@
             color: #333;
         }
 
-        input, select {
+        input {
             padding: 10px;
             margin-bottom: 16px;
-            border: 1px solid #2980b9;
+            border: 1px solid #ccc;
             border-radius: 4px;
             transition: border-color 0.3s ease-in-out;
         }
@@ -87,14 +87,10 @@
             <label for="confirmPassword">Confirm Password:</label>
             <input type="password" id="confirmPassword" name="confirmPassword" required>
 
-            <label for="role">Select Role:</label>
-            <select id="role" name="role" required>
-                <option value="user">User</option>
-                <option value="admin">Admin</option>
-            </select>
+            
 
             <button type="button" onclick="registerAccount()">Register</button>
-            <p class="login-link" onclick="redirectToLoginPage()">Already have an account? Back to Login</p>
+            <p class="login-link" onclick="redirectLogin()">Already have an account? Back to Login</p>
         </form>
     </div>
 
@@ -106,18 +102,19 @@
             var confirmPassword = document.getElementById("confirmPassword").value;
             var role = document.getElementById("role").value;
 
-            // Basic validation, replace with actual registration logic
+            // Replace this with your actual registration logic
             if (password === confirmPassword) {
-                alert("Account created successfully. Redirecting to Login...");
-                // Redirect to login form
-                redirectToLoginPage();
+                alert("Registration successful! Redirecting...");
+                // Replace "main.html" with the actual path to your main page
+                window.location.href = "main.html";
             } else {
-                alert("Passwords do not match. Please try again.");
+                alert("Password and Confirm Password do not match. Please try again.");
             }
         }
 
-        function redirectToLoginPage() {
-            window.location.href = "index.html"; // Change to the appropriate login page URL
+        function redirectLogin() {
+            // Replace "index.html" with the actual path to your login page
+            window.location.href = "index.html";
         }
     </script>
 </body>
