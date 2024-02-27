@@ -69,7 +69,7 @@
             color: #21618c;
         }
     </style>
-    <title>Registration</title>
+    <title>Registration - Your Website</title>
 </head>
 <body>
     <div class="container">
@@ -87,35 +87,31 @@
             <label for="confirmPassword">Confirm Password:</label>
             <input type="password" id="confirmPassword" name="confirmPassword" required>
 
-            
-
-            <button type="button" onclick="registerAccount()">Register</button>
-            <p class="login-link" onclick="redirectLogin()">Already have an account? Back to Login</p>
+            <button type="button" onclick="registerAndRedirect()">Register</button>
+            <p class="login-link" onclick="redirectMain()">Already have an account? Back to Login</p>
         </form>
     </div>
 
     <script>
-        function registerAccount() {
+        function registerAndRedirect() {
             var fullName = document.getElementById("fullName").value;
             var email = document.getElementById("email").value;
             var password = document.getElementById("password").value;
             var confirmPassword = document.getElementById("confirmPassword").value;
-            var role = document.getElementById("role").value;
 
             // Replace this with your actual registration logic
             if (password === confirmPassword) {
-                alert("Registration successful! Redirecting...");
+                
                 // Replace "main.html" with the actual path to your main page
-                window.location.href = "main.html";
+                window.location.href = "mainwebsite.htm";
             } else {
                 alert("Password and Confirm Password do not match. Please try again.");
             }
-            window.location.href = "mainwebsite.htm";
         }
 
-        function redirectLogin() {
-            // Replace "index.html" with the actual path to your login page
-            
+        function redirectMain() {
+            // Replace "main.html" with the actual path to your main page
+            window.location.href = "mainwebsite.htm";
         }
     </script>
 </body>
