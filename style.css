@@ -1,48 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-bottom: 1000px;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-h2 {
-    margin-bottom: 16px;
-    color: #333;
-}
-
-label {
-    margin-bottom: 8px;
-    color: #333;
-}
-
-input, select {
+.website-header {
+    background-color: #000;
+    color: #fff;
     padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #2980b9;
-    border-radius: 4px;
-    transition: border-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
 }
 
 button {
     background-color: #3498db;
     color: #fff;
-    padding: 12px;
+    padding: 8px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -53,20 +30,10 @@ button:hover {
     background-color: #2980b9;
 }
 
-.create-account-link,
-.login-link {
-    margin-top: 10px;
-    color: #3498db;
-}
-
-.create-account-link a,
-.login-link a {
-    color: #2980b9;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.create-account-link a:hover,
-.login-link a:hover {
-    color: #21618c;
+.main-content {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }

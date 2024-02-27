@@ -3,57 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Website</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Your Website - Main</title>
 </head>
-<body class="black-theme">
-    <div class="website-name">
+<body>
+    <div class="website-header">
         <h1>Your Website</h1>
-    </div>
-    <div class="container" id="loginFormContainer">
-        <form id="loginForm">
-            <h2>Login</h2>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="role">Select Role:</label>
-            <select id="role" name="role" required>
-                <option value="user">User</option>
-                <option value="admin">Admin</option>
-            </select>
-
-            <button type="button" onclick="validateLogin()">Login</button>
-            <p class="create-account-link" onclick="showRegistrationForm()">Don't have an account? Create one</p>
-        </form>
+        <button id="searchButton" onclick="openSearch()">Search</button>
     </div>
 
-    <div class="container" id="registrationFormContainer" style="display: none;">
-        <form id="registrationForm">
-            <h2>Create Account</h2>
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-
-            <label for="role">Select Role:</label>
-            <select id="role" name="role" required>
-                <option value="user">User</option>
-                <option value="admin">Admin</option>
-            </select>
-
-            <button type="button" onclick="registerAccount()">Register</button>
-            <p class="login-link" onclick="showLoginForm()">Already have an account? Back to Login</p>
-        </form>
+    <div class="main-content">
+        <h2>Welcome to Your Website!</h2>
+        <p>This is the main content of your website. Feel free to customize it.</p>
     </div>
 
     <script src="script.js"></script>
