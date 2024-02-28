@@ -3,19 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-like Category Page</title>
     <link rel="stylesheet" href="style.css">
-    <title>Your Website - Main</title>
 </head>
 <body>
-    <div class="website-header">
-        <h1>Your Website</h1>
-        <button id="searchButton" onclick="openSearch()">Search</button>
-    </div>
 
-    <div class="main-content">
-        <h2>Welcome to Your Website!</h2>
-        <p>This is the main content of your website. Feel free to customize it.</p>
-    </div>
+    <!-- Header -->
+    <header>
+        <div id="amazon-logo">Amazon</div>
+        <div id="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Category Section -->
+    <section id="categories">
+        <div class="category-card" onclick="viewProducts('Laptops')">
+            <img src="1.jpg" alt="Laptops">
+            <h2>Laptops</h2>
+        </div>
+        <div class="category-card" onclick="viewProducts('Headphones')">
+            <img src="2.jpg" alt="Headphones">
+            <h2>Headphones</h2>
+        </div>
+        <div class="category-card" onclick="viewProducts('Watches')">
+            <img src="3.jpg" alt="Watches">
+            <h2>Watches</h2>
+        </div>
+        <div class="category-card" onclick="viewProducts('Speakers')">
+            <img src="4.jpg" alt="Speakers">
+            <h2>Speakers</h2>
+        </div>
+        <div class="category-card" onclick="viewProducts('Camera')">
+            <img src="5.jpg" alt="Camera">
+            <h2>Camera</h2>
+        </div>
+        <div class="category-card" onclick="viewProducts('Tablets')">
+            <img src="6.jpg" alt="Tablets">
+            <h2>Tablets</h2>
+        </div>
+        <!-- Add other category cards here -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Amazon Clone</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
